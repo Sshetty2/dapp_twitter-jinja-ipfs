@@ -62,11 +62,11 @@ def run():
 
     SQL = """INSERT INTO tweets(users_pk, username, content, image_pathname, ipfs_hash, time) 
     VALUES(?, ?, ?, ?, ?, ?);"""
-    CUR.execute(SQL, (1, "adam deMAN", "I tried out for the high school wrestling team and guess what?","uploads/adam.jpg", "QmURTo5e9f6zTDJVyhN91wjRxntjP99hwMZG3U9gp4DxHG", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
-    CUR.execute(SQL, (2, "blake", "braj","uploads/blake.jpg", "QmQLdT2XVTgfuAPt85e1mUMdArvJdKda5XQfL73sNjwLAa", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
-    CUR.execute(SQL, (3, "ders", "DANG, what's up wit' all deez books?","uploads/ders.jpg", "QmVpTYBsvk9q7MQDuz3i6hEU5dsESwnKeGP1B3XC1NSZwd", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
-    CUR.execute(SQL, (4, "NASA", "	Check out this photo. we took instead of the one we were going to take of our lunch","uploads/PIA22867-640x350.jpg", "QmZVZDvgQBWyBKKpHf34nYorkCNPiBM95drcTLyxYSBVL1", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
-    CUR.execute(SQL, (5, "Proton Mail", "Interested in system architecture? Here's how to implement end-to-end encryption at Proton Mail","uploads/Protonmail_system_architecture_2014.png", "QmdrzzfWQtLenS67Ke7qV2N1i9Tc1qhx5fiP2He4kx5z1E", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
+    CUR.execute(SQL, (1, "adam deMAN", "I tried out for the high school wrestling team and guess what?","adam.jpg", "QmURTo5e9f6zTDJVyhN91wjRxntjP99hwMZG3U9gp4DxHG", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
+    CUR.execute(SQL, (2, "blake", "braj","blake.jpg", "QmQLdT2XVTgfuAPt85e1mUMdArvJdKda5XQfL73sNjwLAa", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
+    CUR.execute(SQL, (3, "ders", "DANG, what's up wit' all deez books?","ders.jpg", "QmVpTYBsvk9q7MQDuz3i6hEU5dsESwnKeGP1B3XC1NSZwd", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
+    CUR.execute(SQL, (4, "NASA", "	Check out this photo. we took instead of the one we were going to take of our lunch","PIA22867-640x350.jpg", "QmZVZDvgQBWyBKKpHf34nYorkCNPiBM95drcTLyxYSBVL1", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
+    CUR.execute(SQL, (5, "Proton Mail", "Interested in system architecture? Here's how to implement end-to-end encryption at Proton Mail","Protonmail_system_architecture_2014.png", "QmdrzzfWQtLenS67Ke7qV2N1i9Tc1qhx5fiP2He4kx5z1E", datetime.utcfromtimestamp(1544020873).strftime('%I:%M:%S %m-%d-%Y')))
 
     CON.commit()
     CUR.close()
